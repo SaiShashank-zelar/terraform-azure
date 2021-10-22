@@ -5,6 +5,12 @@ terraform {
       version = "=2.46.0"
     }
   }
+  backend "azurerm" {
+        resource_group_name  = "sample-project"
+        storage_account_name = "shashank4972"
+        container_name       = "terra"
+        key                  = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
@@ -57,7 +63,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   admin_username                  = "nodesample"
   admin_password                  = "Shashank12345"
   disable_password_authentication = false
- 
+
   source_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
