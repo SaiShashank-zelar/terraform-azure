@@ -29,7 +29,7 @@ resource "random_string" "tf-name" {
 resource "azurerm_resource_group" "state-rg" {
   name = "storage-tfstate-rg"
   location = "East US"
-  
+
   lifecycle {
     prevent_destroy = true
   }
@@ -45,7 +45,7 @@ resource "azurerm_storage_account" "state-sta" {
   access_tier = "Hot"
   account_replication_type = "ZRS"
   enable_https_traffic_only = true
-   
+
   lifecycle {
     prevent_destroy = true
   }
