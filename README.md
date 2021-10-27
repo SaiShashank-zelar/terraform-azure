@@ -1,14 +1,14 @@
 # terraform-azure
-#### Creating an Azure DevOps Account(https://dev.azure.com)
-#### Creating a new Azure DevOps project
-#### Initializing the Azure DevOps Repo
+#### 1).Creating an Azure DevOps Account(https://dev.azure.com)
+#### 2).Creating a new Azure DevOps project
+#### 3).Initializing the Azure DevOps Repo
      * Import a repository of the Terraform Code to the Azure DevOps Repos
-#### Installation Required to perform Terraform Task in Azure DevOps
+#### 4).Installation Required to perform Terraform Task in Azure DevOps
     * Go to Organistation Settings Install the Terraform Build & Release Tasks extension from Marketplace
     * Click on Extensions
     * Click on Browser MarketPlace
     * Install the Azure Pipelines Terraform Tasks by Charles Zipp
-#### Creating a new Azure DevOps Build Pipeline
+#### 5).Creating a new Azure DevOps Build Pipeline
     * click on the Create Pipeline button and select Other Git to create a pipeline.
     * Then select the Empty job template, locate on the top of the screen.
     * Select Agent Specification as ubuntu or windows
@@ -16,7 +16,7 @@
     * Choose the Source folder and choose to copy all content.We will set the target folder as $(build.artifactstagingdirectory)/(Enter fileName which we choose in the Source folder)
     * Add a job with type Publish Build Artifacts and leave it with default parameters
     * In the Triggers tab, check the Enable continuous integration checkbox and click on the Save & queue button and Then click the Save and run button to launch our pipeline.
-#### Creating an Azure DevOps Release Pipeline
+#### 6).Creating an Azure DevOps Release Pipeline
     * On this stage, we will use the artifact generate on the build pipeline and create a Stage task with these following tasks
     * click on the New pipeline button to create a new Azure DevOps Release Pipeline and Select a template page, we choose an Empty job template
     * Add an artifact page, we choose the Build button and configure the Source (build pipeline) to use the build pipeline created on the previous step.
