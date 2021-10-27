@@ -4,7 +4,7 @@
 #### 3).Initializing the Azure DevOps Repo
      * Import a repository of the Terraform Code to the Azure DevOps Repos
 #### 4).Installation Required to perform Terraform Task in Azure DevOps
-    * Go to Organistation Settings Install the Terraform Build & Release Tasks extension from Marketplace
+    * Go to Organization Settings Install the Terraform Build & Release Tasks extension from Marketplace
     * Click on Extensions
     * Click on Browser MarketPlace
     * Install the Azure Pipelines Terraform Tasks by Charles Zipp
